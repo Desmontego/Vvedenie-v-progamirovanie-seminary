@@ -14,6 +14,6 @@ if (value<100)
 }
 else
 {
-    int result = value/10%10;
+    int result = value%10;
     System.Console.WriteLine(result);
 }   

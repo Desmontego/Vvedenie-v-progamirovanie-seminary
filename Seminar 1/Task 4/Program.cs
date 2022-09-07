@@ -1,23 +1,24 @@
 ﻿// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-// 
-// int Prompt(string message)
-// {
-//     Console.Write(message);
-//     string strValue = Console.ReadLine() ?? "0";
-//     int value = int.Parse(strValue);
-//     return value;
-// }
 
-// int value = Prompt("Введите число -> ");
-Console.WriteLine ("Введите первое число");
-int value =int.Parse(Console.ReadLine()!);
-bool remains = (value=>1) && (value <=8);
-if (remains)
+int Prompt(string message)
 {
-    System.Console.WriteLine("НЕТ");
+    Console.Write(message);
+    string strValue = Console.ReadLine() ?? "0";
+    int value = int.Parse(strValue);
+    return value;
 }
-else
+
+int dayNumber = Prompt("Введите число -> ");
+
+if (dayNumber == 6 || dayNumber == 7) 
 {
-    System.Console.WriteLine("Да");    
+  Console.WriteLine(" -> да");
 }
+  else if (dayNumber < 1 || dayNumber > 7) {
+    Console.WriteLine("это не день недели");
+  }
+  else
+  {
+     Console.WriteLine(" -> нет");
+  }
