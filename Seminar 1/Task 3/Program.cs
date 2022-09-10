@@ -8,12 +8,12 @@ int Prompt(string message)
     return value;
 }
 int value = Prompt("Введите число -> ");
-if (value<100)
-{
-    System.Console.WriteLine("нет третьего числа");
-}
-else
-{
-    int result = value%10;
-    System.Console.WriteLine(result);
-}   
+// if (value<100)
+// {
+//     System.Console.WriteLine("нет третьего числа");
+// }
+// else
+// {
+//     int result = value%10;
+//     System.Console.WriteLine(result);
+// }   
